@@ -11,7 +11,7 @@ class School
   
   
   def add_student(names, grade)
-    if roster[grade]!
+    if roster[grade] == false
       roster[grade] = [ ]
       roster[grade] << names
     else
