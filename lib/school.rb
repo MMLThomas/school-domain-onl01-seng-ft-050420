@@ -11,11 +11,11 @@ class School
   
   
   def add_student(names, grade)
-    if (roster[grade] == false)
-      roster[grade] = [ ]
-      roster.merge!(grade => names)
+    if roster[grade] 
+      roster[grade] << names
     else
-      roster.merge!(grade => names)
+      roster[grade] = [ ]
+      roster[grade] << names
     end
     
   end
