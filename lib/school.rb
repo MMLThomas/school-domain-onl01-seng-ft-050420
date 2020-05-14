@@ -15,11 +15,8 @@ class School
   def add_student(names, grade)
     if (roster.keys.include?(grade) == false)
       roster[grade] = [ ]
-      roster.merge!(grade names
-    else
-      roster[grade] << names
     end
-    
+    roster.merge!(grade => names)
     
   end
   
