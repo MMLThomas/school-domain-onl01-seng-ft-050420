@@ -24,7 +24,7 @@ class School
   end
   
   def sort
-    roster.select {|grade, names| names.sort}
+    roster.select {|grade, names| names.sort!}
   end
   
 
