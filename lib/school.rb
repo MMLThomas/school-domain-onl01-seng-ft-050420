@@ -13,11 +13,11 @@ class School
   end
   binding pry
   
-  def add_student(name, grade)
+  def add_student(names, grade)
     if roster.keys.include?(grade) == false
       roster[grade] = []
     end
-    roster[grade] << name
+    roster[grade] << names
   end
   
   
