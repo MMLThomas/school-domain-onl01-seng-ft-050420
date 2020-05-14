@@ -10,6 +10,7 @@ class School
   
   def roster
     roster = {}
+  end
   
   def add_student(names, grade)
     if roster.keys.include?(grade) == false
