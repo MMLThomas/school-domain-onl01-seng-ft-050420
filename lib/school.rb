@@ -5,8 +5,11 @@ class School
   
   def initialize(name)
     @name = name
-    @roster = {}
+    roster = {}
   end
+  
+  def roster
+    roster = {}
   
   def add_student(names, grade)
     if roster.keys.include?(grade) == false
