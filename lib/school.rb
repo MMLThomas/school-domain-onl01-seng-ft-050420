@@ -9,9 +9,9 @@ class School
   end
   
   def roster
-    {}
+    roster = {}
   end
-  binding pry
+  
   def add_student(name, grade)
     if roster.keys.include?(grade) == false
       roster[grade] = []
