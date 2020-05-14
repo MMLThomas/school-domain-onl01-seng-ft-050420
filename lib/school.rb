@@ -18,7 +18,6 @@ class School
       roster[grade] = []
     end
     roster[grade] << name
-  binding pry
   end
   
   
