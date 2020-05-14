@@ -15,7 +15,7 @@ class School
     if (@roster[grade] == false)
       @roster[grade] = [ ]
     end
-    @roster.merge!(grade => names)
+    @roster[grade] << names
     
   end
   
