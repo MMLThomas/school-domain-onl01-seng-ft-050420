@@ -15,9 +15,9 @@ class School
     if (@roster[grade] == false)
       @roster[grade] = [ ]
       @roster[grade] << names
-      
     else
-    @roster[grade] << names
+      @roster[grade] << names
+    end
     
   end
   
