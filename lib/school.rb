@@ -3,7 +3,7 @@ require 'pry'
 # code here!
 class School
   
-  def roster
+  def initialize
     roster = {}
   end
   
