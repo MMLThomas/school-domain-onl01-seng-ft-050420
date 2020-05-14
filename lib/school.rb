@@ -24,7 +24,7 @@ class School
   end
   
   def sort
-    roster.keys.sort!
+    roster.sort_by |grade, name|
   end
   
 
