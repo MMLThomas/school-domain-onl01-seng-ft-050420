@@ -5,18 +5,15 @@ class School
   
   def initialize(name)
     @name = name
-    roster = {}
+    @roster = {}
   end
   
-  def roster
-    roster = {}
-  end
   
   def add_student(names, grade)
-    if (roster.keys.include?(grade) == false)
-      roster[grade] = [ ]
+    if (@roster.keys.include?(grade) == false)
+      @roster[grade] = [ ]
     end
-    roster.merge!(grade => names)
+    @roster.merge!(grade => names)
     
   end
   
