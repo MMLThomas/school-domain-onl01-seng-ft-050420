@@ -1,3 +1,5 @@
+require pry
+
 # code here!
 class School
   attr_reader :name
@@ -9,7 +11,7 @@ class School
   def roster
     {}
   end
-  
+  binding pry
   def add_student(name, grade)
     if roster.keys.include?(grade) == false
       roster[grade] = []
